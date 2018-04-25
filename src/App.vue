@@ -1,7 +1,6 @@
 <template>
   <div id="app">
-    <img src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js + TypeScript App"/>
+    <HelloWorld/>
   </div>
 </template>
 
@@ -22,8 +21,22 @@ export default class App extends Vue {}
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  text-align: center;
   color: #2c3e50;
   margin-top: 60px;
+}
+
+.spotify-player {
+  background: #000000;
+  border: 1px solid #666666;
+  width: 50%;
+  margin: 10px;
+  padding: 4px;
+  border-radius: 10px;
+}
+
+.player:after {
+  clear: both;
+  content: " ";
+  display: block;
 }
 </style>
